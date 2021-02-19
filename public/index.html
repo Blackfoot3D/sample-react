@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="/src/fonts/Goosebreak.woff2" as="style" type="font/woff2" crossorigin />
+    <link rel="preload" href="/src/fonts/Goosebreak.woff" as="style" type="font/woff" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- <meta name="description" content="Web site created using create-react-app" /> -->
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" /> -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" /> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,11 +28,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
+    <title>Blackfoot Digital Project</title>
+    <!-- <script src="/js/jquery.quickfit.js" type="text/javascript" charset="utf-8"></script> -->
+</head>
+
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root" class="app"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +45,40 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+    <!-- <script type="module" async defer src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> -->
+    <!-- <script type="module" async defer src="../node_modules/@google/model-viewer/dist/model-viewer-umd.js"></script> -->
+    <!-- <script type="module" src="https://modelviewer.dev/dist/model-viewer.js"></script> -->
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <!-- <script async defer nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> -->
+    <!-- <script async defer src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> -->
+    <!-- <script async defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <!-- <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> -->
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <!-- <script async defer src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> -->
+
+    <!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary -->
+    <!-- <script async defer src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script> -->
+
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script async defer src="https://unpkg.com/focus-visible@5.0.1/dist/focus-visible.js"></script>
+
+    <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
+    <!-- <script async defer src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script> -->
+
+    <!-- <script type="text/javascript" src="/js/jquery.quickfit.js"></script> -->
+    <!-- RTI VIEWER -->
+    <!-- <link type="text/css" href="/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="Stylesheet" /> -->
+    <!-- <link type="text/css" href="/css/webrtiviewer.css" rel="Stylesheet" /> -->
+
+    <!-- <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+
+    <script async defer type="text/javascript" src="/js/pep.min.js"></script>
+
+    <script type="text/javascript" src="/spidergl/spidergl.js"></script>
+    <script type="text/javascript" src="/spidergl/multires.js"></script> -->
+</body>
+
 </html>

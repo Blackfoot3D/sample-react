@@ -1,0 +1,602 @@
+.introStyle {
+    background-color: #b9dfd1;
+    /* filter: opacity(calc(var(--nav-slide-opacity) * 1.5)); */
+}
+
+.historyStyle {
+    background-color: #e2eaf4;
+    /* filter: opacity(calc(var(--nav-slide-opacity) * 1.5)); */
+}
+
+.materialsStyle {
+    background-color: #e9ebe3;
+    /* filter: opacity(calc(var(--nav-slide-opacity) * 1.5)); */
+}
+
+.designStyle {
+    background-color: #f6f7f9;
+    /* filter: opacity(calc(var(--nav-slide-opacity) * 1.5)); */
+}
+
+.storiesStyle {
+    background-color: #fff4d6;
+    /* filter: opacity(calc(var(--nav-slide-opacity) * 1.5)); */
+}
+
+.parentContainer {
+    width: 45vw;
+    min-width: 45vw;
+    height: 90vh;
+    overflow-y: hidden;
+    scroll-behavior: auto;
+    overflow-x: hidden !important;
+    position: fixed;
+    /* padding: 5%; */
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.parentContainerIntro {
+    min-width: 45vw;
+    width: 45vw;
+    height: 90vh;
+    overflow-y: hidden;
+    scroll-behavior: auto;
+    overflow-x: hidden !important;
+    float: right;
+}
+
+.smoothScroll {
+    scroll-behavior: smooth;
+}
+
+.container {
+    top: 0;
+    /* padding: 5% 5% 5% 5%; */
+    max-height: 90vh;
+    min-width: 45vw;
+    /* height: 100%; */
+    min-height: 90vh;
+    visibility: visible;
+    /* Overflow auto seems to have the same effect as overflow overlay, but seems to work on firefox. (Issue #6)  */
+    overflow-y: auto;
+    /*overflow: overlay; seems to be the problem regarding Issue #6.
+    /* overflow-y: overlay; */
+    /* width: 45vw; */
+    position: relative;
+    /* overflow: hidden; */
+    padding-bottom: 10%;
+}
+
+.container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #2d3e4e;
+    border-radius: 5px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #2d3e4e;
+}
+
+.container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.introContainer {
+    position: relative;
+    top: 0;
+    /* padding-top: 40%; */
+    width: 100%;
+    /* overflow-y: auto; */
+    overflow-wrap: break-word;
+    height: 90vh;
+    visibility: visible;
+    left: 0;
+    padding-top: 5%;
+    /* padding-top: 50vh; */
+}
+
+.titleBox {
+    display: block;
+    position: relative;
+    padding: 0% 5.09% 0px 0%;
+    /* border: 1px solid red; */
+}
+
+.header {
+    display: inline-block;
+    margin: 135px 0% 0px 10.41%;
+    font-family: "Goosebreak", serif;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 110px; */
+    font-size: 5.73vw;
+    line-height: 96.6%;
+    color: #2d3e4e;
+    /* border: 1px solid blue; */
+    position: relative;
+}
+
+.header2 {
+    display: inline-block;
+    margin: 135px 0% 0px 10.41%;
+    font-family: "Goosebreak", serif;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 110px; */
+    font-size: 5.73vw;
+    line-height: 96.6%;
+    color: #2d3e4e;
+    /* border: 1px solid blue; */
+    position: relative;
+}
+
+.subheader {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 3.85vw;
+    color: #2d3e4e;
+    /* direction: rtl; */
+    padding-left: 0px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 29px;
+    /* border: 1px solid red; */
+    width: 100%;
+    /* transition: 0.5s; */
+    /* transition:0.5s; */
+    direction: ltr;
+    text-align: right;
+}
+
+.subheader2 {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 3.85vw;
+    color: #2d3e4e;
+    /* direction: rtl; */
+    padding-left: 0px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 29px;
+    /* border: 1px solid red; */
+    width: 100%;
+    /* transition: 0.5s; */
+    /* transition:0.5s; */
+    direction: ltr;
+    text-align: right;
+    padding-right: 5.5%;
+}
+
+.translationButtonBox {
+    width: 150px;
+    height: 71.25px;
+    /* right: 81px; */
+    right: 9.375%;
+    /* top: 0; */
+    bottom: 100%;
+    position: absolute;
+    /* padding: 10px; */
+}
+
+.translationButtonBoxIntro {
+    width: 150px;
+    height: 71.25px;
+    /* right: 81px; */
+    right: 0;
+    top: 0;
+    /* top: 0; */
+    position: absolute;
+    /* padding: 10px; */
+    /* border: 1px solid blue; */
+}
+
+.showContainer {
+    animation-name: show;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    top: 0;
+    padding: 5%;
+    /* min-height: 100%; */
+    height: 100%;
+    background-color: lightblue;
+    visibility: visible;
+    overflow-y: auto;
+}
+
+.hide {
+    visibility: hidden;
+    display: none;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.hideContainer {
+    animation-name: hide;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.contentBox {
+    /* overflow-y: scroll; */
+    position: absolute;
+    overflow-y: auto;
+    /* height: 20vh; */
+    /* padding: 2%; */
+    /* margin-top: 50%; */
+    /* border: 1px solid blue; */
+    /* transition-delay: 0.4s; */
+    width: 45vw;
+    bottom: 0;
+    /* -webkit-box-shadow: inset 0 20px 20px -20px rgba(100, 0, 0, 0.8);
+  -moz-box-shadow: inset 0 20px 20px -20px rgba(100, 0, 0, 0.8);
+  box-shadow: inset 0 20px 20px -20px rgba(100, 0, 0, 0.8); */
+    background-color: transparent;
+    -webkit-box-shadow: inset 0 20px 20px -20px rgba(185, 223, 208, 0.8);
+    -moz-box-shadow: inset 0 20px 20px -20px rgba(185, 223, 208, 0.8);
+    box-shadow: inset 0 30px 30px -20px rgba(185, 223, 208, 0.8);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    /* overflow: scroll; */
+    overflow-x: hidden !important;
+    /* border: 1px solid red; */
+    padding-bottom: 15%;
+}
+
+.contentBox h3 {
+    direction: ltr;
+}
+
+.contentBox p {
+    direction: ltr;
+}
+
+.hotSpotContentBox {
+    position: absolute;
+    /* background-color: red; */
+    /* transition: 0.5s; */
+    /* border: 1px solid red; */
+    width: 100%;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    transition: 0.5;
+    padding-bottom: 10%;
+}
+
+.HSContentVisible {
+    opacity: 1;
+    pointer-events: all;
+    /* visibility: visible; */
+    transition: 0.5s;
+    /* animation-name: myShow; */
+    /* animation-fill-mode: forwards; */
+    /* display: none; */
+    /* animation-duration: 5s; */
+}
+
+.HSContentHidden {
+    opacity: 0;
+    pointer-events: none;
+    /* visibility: hidden; */
+    transition: 0.5s;
+    /* display: none; */
+    /* animation-name: myHide; */
+    /* animation-fill-mode: forwards; */
+    /* animation-duration: 5s; */
+    /* height: 0; */
+}
+
+@keyframes myHide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes myShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.buttonStyle {
+    z-index: 2000;
+    background-color: transparent;
+    /* width: 15.21vw; */
+    height: 4.54vh;
+    background-image: url("../Images/BackArrow.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    padding-left: 7%;
+    /* padding: 1% 1% 1% 8%; */
+    border: none;
+    margin: 46px 0px 0px 6.25%;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #5b6976;
+    white-space: nowrap;
+    position: absolute;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE 5-7 */
+    opacity: 1;
+}
+
+.buttonStyleHidden {
+    background-color: transparent;
+    /* width: 15.21vw; */
+    height: 4.54vh;
+    background-image: url("../Images/BackArrow.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    padding-left: 3%;
+    /* padding: 1% 1% 1% 8%; */
+    border: none;
+    margin: 46px 0px 0px 6.25%;
+    transition: 0.3s;
+    pointer-events: none;
+    color: #5b6976;
+    white-space: nowrap;
+    position: absolute;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE 5-7 */
+    opacity: 0;
+}
+
+.buttonStyleHidden span {
+    height: 100%;
+    padding: 1% 10% 1% 1%;
+}
+
+.buttonStyle:hover {
+    padding-left: 3%;
+    color: #2d3e4e;
+}
+
+.buttonStyle span {
+    height: 100%;
+    padding: 1% 10% 1% 1%;
+}
+
+.hidden {
+    transition: 1s;
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE 5-7 */
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.show {
+    transition: 1s;
+    /* visibility: hidden; */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE 5-7 */
+    opacity: 1;
+    position: absolute;
+}
+
+@media only screen and (max-width: 800px) {
+    .parentContainer {
+        width: 100vw;
+        height: 56.16%;
+        top: 37.91%;
+        /* border: 1px solid red; */
+        /* position: absolute; */
+        /* min-height: 56.16%; */
+        /* max-height: 56.16vh; */
+        /* max-width: 100vw;
+        min-width: 100vw; */
+        flex-direction: row;
+        /* border: 10px solid pink; */
+    }
+    .parentContainerIntro {
+        /* width: 100vw; */
+        width: 100vw;
+        /* height: 56.16%; */
+        /* border: 1px solid red; */
+        top: 0;
+        height: 100%;
+        /* right: 100%; */
+        /* border: 5px solid red; */
+        /* position: fixed; */
+        /* min-height: 51.16%; */
+        /* max-height: 56.16vh; */
+        /* max-height: 56.16vh; */
+        /* max-width: 100vw;
+        min-width: 100vw; */
+    }
+    .titleBox {
+        direction: rtl;
+        /* border: 1px solid red; */
+    }
+    .translationButtonBox {
+        bottom: 50%;
+        right: -50px;
+        width: 75px;
+    }
+    .header {
+        margin: 50px 14.9% 7px 10.41%;
+        /* font-size: 110px; */
+        font-size: 8vw;
+        line-height: 96.6%;
+        border: 1px solid blue;
+    }
+    .header2 {
+        margin: 6.6vw 5.6% 0px 10.41%;
+        /* font-size: 110px; */
+        font-size: 8vw;
+        line-height: 96.6%;
+        /* border: 1px solid blue; */
+        padding-top: 75px;
+    }
+    .subheader {
+        font-size: 5.33vw;
+        /* direction: rtl; */
+        margin-bottom: 0px;
+        width: 100%;
+        margin-right: 14.9%;
+        /* border: 1px solid blue; */
+    }
+    .subheader2 {
+        font-size: 5.33vw;
+        /* direction: rtl; */
+        margin-bottom: 0px;
+        width: 100%;
+        margin-right: 5.6%;
+        /* border: 1px solid blue; */
+    }
+    .container {
+        /* top: 37.91%; */
+        /* padding: 5% 5% 5% 5%; */
+        /* max-height: 56.16vh; */
+        height: 100%;
+        min-height: 56.16%;
+        width: 105vw;
+        min-width: 100vw;
+        /* overflow: hidden; */
+        /* border: 3px solid blue; */
+        /* direction: rtl; */
+        /* overflow-x: hidden; */
+        /* border: 1px solid red; */
+        /* margin-left: 5%; */
+    }
+    .introContainer {
+        height: 100%;
+        min-height: 56.16%;
+        width: 100vw;
+        min-width: 100vw;
+        /* bottom: 5.94%; */
+    }
+    .contentBox {
+        /* overflow-y: scroll; */
+        /* position: absolute; */
+        overflow-y: auto;
+        /* height: 20vh; */
+        /* padding: 2%; */
+        /* margin-top: 50%; */
+        /* border: 1px solid blue; */
+        /* transition-delay: 0.4s; */
+        width: 100%;
+        /* height: 62.79%; */
+        height: 100%;
+        max-width: 100vw;
+        top: 0 !important;
+        /* border: 1px solid red; */
+    }
+    .buttonStyle {
+        /* position: relative; */
+    }
+    .buttonStyle {
+        z-index: 2000;
+        background-color: transparent;
+        /* width: 15.21vw; */
+        height: 4.54vh;
+        background-image: url("../Images/BackArrow.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 16px;
+        padding-left: 10%;
+        /* padding: 1% 1% 1% 8%; */
+        border: none;
+        margin: 46px 0px 0px 6.25%;
+        transition: 0.3s;
+        cursor: pointer;
+        color: #5b6976;
+        white-space: nowrap;
+        position: absolute;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        /* IE 8 */
+        filter: alpha(opacity=100);
+        /* IE 5-7 */
+        opacity: 1;
+    }
+    .buttonStyleHidden {
+        background-color: transparent;
+        /* width: 15.21vw; */
+        height: 4.54vh;
+        background-image: url("../Images/BackArrow.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 16px;
+        padding-left: 10%;
+        /* padding: 1% 1% 1% 8%; */
+        border: none;
+        margin: 46px 0px 0px 6.25%;
+        transition: 0.3s;
+        pointer-events: none;
+        color: #5b6976;
+        white-space: nowrap;
+        position: absolute;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        /* IE 8 */
+        filter: alpha(opacity=0);
+        /* IE 5-7 */
+        opacity: 0;
+    }
+    .buttonStyle:hover {
+        padding-left: 6%;
+        color: #2d3e4e;
+    }
+    .buttonStyleHidden span {
+        height: 100%;
+        padding: 1% 1% 1% 1%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /* .translationButtonBox {
+        bottom: 0px;
+        right: -50px;
+    } */
+}
+
+
+/* @media only screen and (max-width: 400px) {
+    .translationButtonBox {
+        bottom: 0;
+        right: -50px;
+    }
+} */

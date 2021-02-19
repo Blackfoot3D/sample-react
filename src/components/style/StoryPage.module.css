@@ -1,0 +1,16 @@
+.parent {
+    height: 100%;
+    width: 100vw;
+}
+
+.noAnim {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+    -moz-animation-duration: 0s !important;
+    -o-animation-duration: 0s !important;
+}

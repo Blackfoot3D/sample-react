@@ -1,0 +1,177 @@
+.activeModelContainer {
+    /* min-width: 48.8vw; */
+    width: 100vw;
+    height: 53.6vw;
+    transform: translateY(-50%) translateX(-68%);
+    /* border: 2px solid red; */
+    /* -webkit-filter: blur(0);
+  -webkit-font-smoothing: subpixel-antialiased; */
+    /* transition: 0.5s; */
+    /* border: 2px solid red; */
+    top: 50%;
+    /* position: relative; */
+    position: absolute;
+    /* transform: translateY(-25%) ; */
+}
+
+.activeModelContainer:hover {
+    /* transform: scale(1.2) translateY(-25%) rotateY(35deg); */
+}
+
+.activeModelContainer:hover .titleContainer {
+    /* transform: scale(0.5) translateY(-50%) translateX(-50%); */
+}
+
+img {}
+
+.modelBox {
+    width: 50vw;
+    height: 50vw;
+    /* min-height: 28.85vw; */
+    /* max-height: 28.85vw; */
+    /* max-width: 28.85vw; */
+    /* border-radius: 50%; */
+    /* border: 1px solid grey; */
+    background: transparent;
+    position: absolute;
+    /* bottom: 0; */
+    /* margin: 0 auto; */
+    /* left: 0; */
+    /* right: 0; */
+    overflow: hidden;
+    z-index: 4000;
+    transition: 40s;
+    right: 0;
+    /* transform-style: preserve-3d; */
+    backface-visibility: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.titleContainer {
+    direction: ltr;
+    max-width: 100%;
+    transition: 0.5s;
+    display: block;
+    z-index: 4001;
+    position: absolute;
+    /* padding: 3%; */
+    /* padding-left: 10%; */
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
+    /* margin-top: 10%; */
+    /* transition-delay: 0.5; */
+    /* pointer-events: none; */
+    /* max-width: 28.85vw; */
+    -webkit-font-smoothing: antialiased;
+    /* border: 2px solid red; */
+    /* text-align: left; */
+    /* left: 0; */
+    /* max-width: 90%; */
+    width: max-content;
+    /* margin: 0 auto; */
+    /* bottom: 0; */
+    /* white-space: nowrap; */
+    /* transform: rotateX(15deg); */
+    /* transform: scale(0.01); */
+    backface-visibility: hidden;
+    /* transform: scale(0.5) translateY(-100%) translateX(-50%); */
+    /* bottom: 100%; */
+    perspective: 1000;
+    /* -webkit-perspective: 1000; */
+    /* border: 1px solid blue; */
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    opacity: calc(var(--nav-slide-opacity) * 1.5);
+}
+
+.titleContainer h1 {
+    /* font-size: 3.9vw; */
+    font-size: 5.333vw;
+    transition: 0.5s;
+    animation-timing-function: ease-in-out;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE 5-7 */
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    /* border: 5px solid yellow; */
+    /* transform: translateY(-50%); */
+    color: var(--primary-color);
+}
+
+.titleContainer h2 {
+    text-align: right;
+    padding-right: 1%;
+    /* font-size: 2.5vw; */
+    font-size: 4.8vw;
+    transition: 0.5s;
+    animation-timing-function: ease-in-out;
+    /* -webkit-font-smoothing: subpixel-antialiased; */
+    color: var(--primary-color);
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.viewButton {
+    width: 19.73vw;
+    height: 7.2vw;
+    left: 104px;
+    top: 391px;
+    background: #ffffff;
+    border: 0.5px solid rgba(45, 62, 78, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 13px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.733vw;
+    line-height: 16px;
+    text-align: center;
+    color: #2d3e4e;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.containerHover {
+    transition: 0.5s;
+    transform: scale(1.2);
+    /* background-color: red; */
+}
+
+.transition {
+    transition: 0.5s;
+}
+
+.mediumSubtitle {
+    text-align: right;
+    padding-right: 10%;
+    font-size: 1.95vw;
+    transition: 0.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-font-smoothing: antialiased;
+}
+
+.mediumName {
+    font-size: 1.95vw;
+    transition: 0.5s;
+    animation-timing-function: ease-in-out;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE 5-7 */
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+model-viewer {
+    width: 100%;
+    height: 100%;
+    --poster-color: transparent;
+    --progress-mask: transparent;
+}

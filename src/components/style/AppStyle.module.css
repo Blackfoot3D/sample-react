@@ -1,0 +1,13 @@
+.navCluster {
+    /* display: inline-block; */
+    position: fixed;
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    width: 20vw;
+    margin: 0 auto;
+    z-index: 11;
+    height: 100px;
+}

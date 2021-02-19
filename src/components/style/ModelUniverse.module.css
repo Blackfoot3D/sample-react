@@ -1,0 +1,125 @@
+/* .modelContainer {
+    background-color: red;
+    grid-column: 3 / span 8;
+} */
+
+.outerBox {
+    /* grid-row: 1 / span 10;
+    grid-column: 1 / span 12; */
+    justify-content: center;
+    /* float: top; */
+    align-items: center;
+    display: flex;
+    /* margin: 1%; */
+    /* transform: rotateZ(-10deg) rotateX(-45deg) translateY(0vh); */
+    transform: translateY(5vw) rotateX(-35deg) rotateZ(-10deg) translateX(0vw) translateY(12vh);
+    /* z-index: -1; */
+    height: 100vh;
+    width: 100vw;
+    /* padding-bottom: 17%; */
+    position: relative;
+    /* transform-style: preserve-3d; */
+    transform-style: preserve-3d;
+    /* perspective: 800px; */
+    pointer-events: none;
+    /* border: 3px solid purple; */
+}
+
+.helpContainer {
+    position: absolute;
+    top: 85px;
+    right: 25px;
+}
+
+.iconWrapper {
+    border: 1px solid red;
+}
+
+.outerContainer {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* border: 3px solid purple; */
+}
+
+.container {
+    /* width: 2000px; */
+    width: 140vw;
+    /* width: 100%; */
+    /* height: 2000px; */
+    height: 140vw;
+    max-width: 140vw;
+    max-height: 140vw;
+    position: absolute;
+    background-color: transparent;
+    /* animation: UniverseSpin 10s linear infinite; */
+    margin: 0px;
+    vertical-align: top;
+    border-radius: 50%;
+    /* transform: rotateX(75deg) translate3d(0px, 0px, -1350px); */
+    /* transform: rotateY(10deg); */
+    transform-style: preserve-3d;
+    /* z-index: -1; */
+    /* border: 13px solid red; */
+    transition-duration: 1.5s;
+    /* border: 13px solid red; */
+    /* border: 13px solid #ffd04e; */
+}
+
+.spinning {
+    animation: UniverseSpin 200s linear infinite;
+}
+
+#center {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    /* left: 295px;
+    top: 295px; */
+    left: 50%;
+    /* top: 20%; */
+    background: #000;
+}
+
+
+/* .field {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    position: sticky;
+    background: darkgrey;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotateX(25deg);
+    animation: spin 200s linear infinite reverse;
+} */
+
+
+/* .field:hover {
+    border: 2px solid red;
+    width: 60px;
+    height: 60px;
+} */
+
+@keyframes UniverseSpin {
+    0% {
+        transform: rotateX(75deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(75deg) rotateZ(-360deg);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .helpContainer {
+        top: 85.41px;
+        right: 25px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .helpContainer {
+        top: 145.82px;
+        right: 25px;
+    }
+}

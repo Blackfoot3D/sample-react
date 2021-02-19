@@ -1,0 +1,24 @@
+.container {
+    /* padding: 20px; */
+    grid-column: 1 / span 4;
+    overflow-y: overlay;
+    overflow: auto;
+    height: 500px;
+    direction: rtl;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.accordion__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    /* padding: 18px; */
+}
+
+.initialDescription {
+    margin-left: 20px;
+    direction: ltr;
+    margin-bottom: 10px;
+}

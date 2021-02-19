@@ -1,0 +1,22 @@
+.grid {
+    /* display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 25px;
+    background-color: rgba(0, 0, 0, 0.2); */
+    /* margin: 25px; */
+    /* height: 90vh; */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gridItem {
+    background-color: darkgrey;
+}
+
+.mapButtonStyle {
+    color: blue;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}

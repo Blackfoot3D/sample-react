@@ -1,0 +1,110 @@
+.textBlock {
+    /* padding: 35px; */
+    direction: ltr;
+    /* border: 1px solid black; */
+}
+
+.textBlock h3 {
+    font-family: "Goosebreak", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20.8px;
+    color: #2d3e4e;
+    display: inline-block;
+    padding: 6.78px 51px 9.22px 33px;
+    background-image: url("../Images/BGHighlight.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: center;
+    /* margin-left: 35px; */
+    /* margin: 27px 0px 22px 60px; */
+    margin: 27px 0px 22px 6.94%;
+}
+
+
+/* .textBlockBG {
+    position: absolute;
+    background-image: url("../Images/BGHighlight.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+} */
+
+.textBlock p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3c4144;
+    /* border: 1px solid black; */
+    /* margin: 0px 74px 25px 117px; */
+    margin: 0px 8.56% 25px 13.54%;
+}
+
+.textBlock p a {
+    text-decoration: underline;
+    color: #3c4144;
+    transition: 0.3s;
+}
+
+.textBlock p a:hover {
+    color: red;
+    /* background-color: red; */
+}
+
+.tbNoTitle {
+    padding-top: 25px;
+    /* background-color: red; */
+}
+
+.tbNoTitle::first-letter {
+    /* position: absolute; */
+    float: left;
+    /* vertical-align: text-bottom; */
+    line-height: 70px;
+    margin-right: 7px;
+    /* border: 1px solid red; */
+    font-family: "Goosebreak", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 98px;
+    /* line-height: 0px; */
+    color: #3c4144;
+    /* vertical-align: bottom; */
+    /* initial-letter: all; */
+}
+
+.introTextBlock {
+    /* padding: 35px; */
+    direction: ltr;
+    /* border: 1px solid black; */
+}
+
+.introTextBlock h3 {
+    font-family: "Goosebreak", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20.8px;
+    color: #2d3e4e;
+    display: inline-block;
+    padding: 6.78px 51px 6.22px 33px;
+    background-image: url("../Images/BGHighlight.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    /* margin-left: 35px; */
+    margin: 0px 0px 25.16px 35px;
+}
+
+.introTextBlock p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3c4144;
+    /* border: 1px solid black; */
+    margin: 0px 123px 25.16px 68px;
+    display: inline-block;
+}

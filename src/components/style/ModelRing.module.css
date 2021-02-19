@@ -1,0 +1,115 @@
+.modelContainer {
+    background-color: red;
+    /* grid-column: 3 / span 8; */
+    /* grid-column: 5 / span 8; */
+    /* grid-row: 1 / span 4; */
+}
+
+.outerBox {
+    /* grid-row: 1 / span 3; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* margin: 1%; */
+    /* grid-column: 3 / span 8; */
+    /* grid-column: 5 / span 8;
+    grid-row: 1 / span 4; */
+    /* border: 1px solid blue; */
+    position: absolute;
+    width: 100%;
+    height: 94.06%;
+    /* top: 5.94vh; */
+    bottom: 0;
+    overflow: hidden !important;
+    overscroll-behavior-y: contain !important;
+}
+
+.helpContainer {
+    position: absolute;
+    right: 1vh;
+    top: 50px;
+}
+
+.arrowNavBox {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 15vw;
+    height: 50vh;
+    position: fixed;
+    right: 0;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+.arrowNavButton {
+    /* display: flex; */
+    mask-image: url("../Images/chevronLeft.svg");
+    cursor: pointer;
+    background-color: var(--primary-color);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    height: 10%;
+    width: 20px;
+    mask-position: center;
+    transform: rotate(90deg);
+    opacity: 0.6;
+    transition: 0.5s;
+    padding: 10%;
+    border: 1px solid blue;
+    margin: 0 auto;
+}
+
+.arrowNavButton:hover {
+    opacity: 1;
+}
+
+.container {
+    /* width: 600px; */
+    /* height: 600px; */
+    /* background-color: white; */
+    /* border: 5px solid red; */
+    /* animation: ringSpin 200s linear infinite; */
+    margin: 0 auto;
+    border-radius: 50%;
+    /* will-change: transform; */
+    /* transform: translateX(-45%); */
+    /* transform: translateX(-45%); */
+    transition-duration: 1s;
+}
+
+#center {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    /* left: 295px;
+    top: 295px; */
+    left: 50%;
+    top: 50%;
+    background: #000;
+}
+
+.field {
+    /* width: 50px;
+    height: 50px; */
+    /* position: absolute; */
+    position: sticky;
+    background: darkgrey;
+    border-radius: 50%;
+    text-align: center;
+    /* animation: spin 200s linear infinite reverse; */
+    transform: rotateZ(90deg);
+    will-change: transform;
+}
+
+.field:hover {
+    border: 2px solid red;
+    width: 60px;
+    height: 60px;
+}
+
+@keyframes ringSpin {
+    100% {
+        transform: rotate(0turn) translateZ(0);
+    }
+}

@@ -1,0 +1,121 @@
+.RadioContainer {
+    z-index: 100000;
+    position: absolute;
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    /* height: 6vh; */
+    margin: 0 auto 2.78vh;
+    bottom: 0;
+    justify-content: center;
+    pointer-events: none;
+    /* opacity: calc(var(--nav-slide-opacity) * 1.5); */
+}
+
+.RadioContainerCollapse {
+    position: absolute;
+    display: flex;
+    /* z-index: -1; */
+    /* width: 0px; */
+    /* right: 100%; */
+    transition: 0.5s;
+    /* transform: translateX(100%); */
+}
+
+.expandButton {
+    pointer-events: all;
+    width: 30px;
+    height: 30px;
+    /* border: none; */
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+    mask-image: url("../Images/Arrow.svg");
+    mask-repeat: no-repeat;
+    mask-size: 80% 80%;
+    mask-position: center;
+    -webkit-mask-image: url("../Images/Arrow.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 80% 80%;
+    -webkit-mask-position: center;
+    background-color: var(--primary-color);
+    right: 0;
+    bottom: 50%;
+    /* position: absolute; */
+    margin: 7px;
+    opacity: 0.5;
+    /* transform: rotate(0deg) !important; */
+    filter: opacity(calc(var(--nav-slide-opacity) * 1.5));
+}
+
+.expandButton:hover {
+    opacity: 1;
+}
+
+.expandActive {
+    transform: rotate(180deg);
+}
+
+
+/* .expandActive:hover {
+    transform: rotate(0deg);
+} */
+
+.expandInactive {
+    transform: rotate(0deg);
+}
+
+
+/* .expandInactive:hover {
+    transform: rotate(180deg);
+} */
+
+.chevronActive {
+    transform: rotate(180deg);
+}
+
+.chevronInactive {
+    transform: rotate(0deg);
+}
+
+.RadioContainerExpand {
+    position: absolute;
+    /* Adjusts top row to the right to aligh with bottom row */
+    display: flex;
+    /* right: 100%; */
+    width: max-content;
+    transition: 0.5s;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.spinRight {
+    /* Turns Icon right to face right */
+    transition: 0.5s;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.spinLeft {
+    /* Turns Icon left to face up */
+    transition: 0.5s;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+@media only screen and (max-width: 800px) {
+    .RadioContainer {
+        width: max-content;
+        justify-content: right;
+        margin: 0 0 0;
+        right: 0%;
+        transition: 0.5s;
+        bottom: 13px;
+        /* z-index: 0; */
+        z-index: 100000000000;
+        max-width: 1000px;
+        /* border: 1px solid red; */
+    }
+}

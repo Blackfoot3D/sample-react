@@ -1,0 +1,13 @@
+<!DOCTYPE Doc>
+<MultiRes>
+<Content type="LRGB_PTM">
+<Size width="4272" height="2848" coefficients="6"/>
+<Scale>2 2 2 2 2 2 </Scale>
+<Bias>124 113 87 70 86 9 </Bias>
+</Content>
+<Tree>1365 0
+256
+8192 8192 255
+0 0 0
+</Tree>
+</MultiRes>

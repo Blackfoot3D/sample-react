@@ -1,0 +1,233 @@
+.helpWindow {
+    max-width: 50vw;
+    min-width: 25vw;
+    background-color: rgba(220, 220, 220, 0.5);
+    z-index: 400;
+    /* top: 50%;
+    left: 50%; */
+    /* border: 2px solid black; */
+    /* top: 10vh; */
+    /* right: 2vw; */
+    position: absolute;
+    right: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+    /* animation-direction: reverse; */
+    animation-name: showhelpwindow;
+    /* transform: translate(-50%, -50%); */
+    padding: 15%;
+    text-align: left;
+}
+
+.showhelp {
+    opacity: 0;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* animation-name: showhelpwindow; */
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+.hidehelp {
+    opacity: 1;
+    animation-direction: reverse;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* animation-name: showhelpwindow; */
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes showhelpwindow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hidehelpwindow {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.RadioButton {
+    /* right: 85.41px; */
+    /* right: 1.14vw; */
+    /* top: 25px; */
+    transition: 0.5s;
+    cursor: pointer;
+    /* Size */
+    width: 50.41px;
+    height: 50.41px;
+    min-width: 31px;
+    min-height: 31px;
+    /* Circle */
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    /* Background (If needed) */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    /* Text */
+    color: var(--primary-color);
+    text-align: center;
+    /* margin: 1% 1%; */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    /* IE 8 */
+    /* filter: alpha(opacity=60); */
+    /* IE 5-7 */
+    /* opacity: 0.6; */
+    /* right: 100; */
+    /* float: right; */
+    /* position: absolute; */
+    z-index: 400;
+    /* right: 0; */
+    background-color: var(--secondary-color);
+    opacity: 0.6;
+    /* filter: opacity(calc(var(--nav-slide-opacity) * 1.5)); */
+}
+
+.RadioButton:hover {
+    transition: 0.5s;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE 5-7 */
+    opacity: 1;
+    border: 2px solid var(--primary-color);
+}
+
+.RadioButtonActive {
+    /* right: 7.46vh; */
+    /* right: 1.14vw; */
+    /* top: 1.14vw; */
+    /* right: 1.14vw;
+    top: 1.14vw; */
+    transition: 0.5s;
+    /* Size */
+    /* width: 2.73vw;
+    height: 2.73vw; */
+    width: 50.41px;
+    height: 50.41px;
+    min-width: 31px;
+    min-height: 31px;
+    /* Circle */
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    /* Background (If needed) */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    /* Text */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    /* IE 5-7 */
+    /* right: 100; */
+    /* float: right; */
+    /* position: absolute; */
+    z-index: 400;
+    /* top: 100; */
+    /* ******* */
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE 5-7 */
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* @media only screen and (max-width: 830px) {
+    .helpWindow {}
+    .RadioButton {
+        top: 7.46vh;
+        right: 1.14vh;
+    }
+    .RadioButtonActive {
+        top: 7.46vh;
+        right: 1.14vh;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .RadioButton {
+        top: 16.14vh;
+        right: 1.14vh;
+    }
+    .helpWindow {}
+    .RadioButtonActive {
+        top: 16.14vh;
+        right: 1.14vh;
+    }
+} */
+
+@media only screen and (max-width: 800px) {
+    .RadioButton {
+        margin: 0;
+        margin-left: 1px;
+        margin-right: 1px;
+        width: 31px;
+        height: 31px;
+        font-size: 17px;
+        line-height: 19px;
+        top: 5vh;
+        right: 4.46vh;
+        min-width: 31px;
+        min-height: 31px;
+    }
+    .helpWindow {
+        max-width: 80vw;
+        min-width: 25vw;
+        background-color: rgba(220, 220, 220, 0.5);
+        z-index: 400;
+        /* top: 50%;
+        left: 50%; */
+        /* border: 2px solid black; */
+        /* top: 10vh; */
+        /* right: 2vw; */
+        position: absolute;
+        right: 100%;
+        border-radius: 10px;
+        transition: 0.5s;
+        /* animation-direction: reverse; */
+        animation-name: showhelpwindow;
+        /* transform: translate(-50%, -50%); */
+        padding: 15%;
+        text-align: left;
+    }
+    .RadioButtonActive {
+        margin: 0;
+        margin-left: 1px;
+        margin-right: 1px;
+        min-width: 31px;
+        min-height: 31px;
+        font-size: 17px;
+        line-height: 19px;
+        top: 1vh;
+        right: 4.46vh;
+        width: 31px;
+        height: 31px;
+    }
+    .iconText {
+        font-size: 15px;
+        line-height: 17.58px;
+    }
+}

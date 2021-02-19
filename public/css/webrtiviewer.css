@@ -1,0 +1,269 @@
+* {
+    /* -webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: -moz-none;
+		-o-user-select: none;
+		outline: none; */
+}
+
+body {
+    /* margin: 4px; */
+    overflow: hidden;
+    /*height: 100%;*/
+}
+
+.toolbar {
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    /* height: 6vh; */
+    margin: 0 auto 2.78vh;
+    bottom: 45px;
+    justify-content: center;
+    pointer-events: none;
+    opacity: calc(var(--nav-slide-opacity) * 1.5);
+    /* border: 1px solid red; */
+}
+
+.toolbarButton,
+.toolbarButton2 {
+    margin-bottom: 10px !important;
+    background: rgba(0, 0, 0, 0) !important;
+    border: 0px !important;
+    color: transparent;
+    bottom: 0 !important;
+    /* Fixes alignment when there is no text */
+    vertical-align: top;
+    cursor: pointer;
+    transition: 0.5s;
+    /* Size */
+    /* width: 35px;
+        height: 35px;
+        min-width: 35px;
+        min-height: 35px; */
+    width: 45.54px !important;
+    height: 45.54px !important;
+    min-width: 31px;
+    min-height: 31px;
+    display: inline-block;
+    /* Circle */
+    /* border: 2px solid var(--primary-color); */
+    border-radius: 50%;
+    /* Background (If needed) */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    /* Text */
+    /* color: var(--primary-color); */
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 10.5px;
+    margin-right: 10.5px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    /* IE 8 */
+    filter: alpha(opacity=60);
+    /* IE 5-7 */
+    opacity: 1;
+    pointer-events: all;
+    background-color: var(--secondary-color);
+}
+
+.toolbarButtonh {
+    margin-bottom: 10px !important;
+    background: rgba(0, 0, 0, 0) !important;
+    border: 0px !important;
+    color: transparent;
+    bottom: 0 !important;
+    /* Fixes alignment when there is no text */
+    vertical-align: top;
+    cursor: pointer;
+    transition: 0.5s;
+    /* Size */
+    /* width: 35px;
+        height: 35px;
+        min-width: 35px;
+        min-height: 35px; */
+    width: 45.54px;
+    height: 45.54px;
+    min-width: 31px;
+    min-height: 31px;
+    display: inline-block;
+    /* Circle */
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    /* Background (If needed) */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    /* Text */
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 10.5px;
+    margin-right: 10.5px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    /* IE 8 */
+    filter: alpha(opacity=60);
+    /* IE 5-7 */
+    /* opacity: 0.6; */
+    /* pointer-events: all; */
+    background-color: var(--secondary-color);
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    pointer-events: none;
+}
+
+.toolbarIcon {
+    width: 100% !important;
+    height: 100% !important;
+    background-size: contain;
+    /* left: 50.9vw !important; */
+    /* bottom: 0px !important; */
+    margin: 0px !important;
+    left: 0 !important;
+    /* opacity: 0.85; */
+    position: absolute;
+    top: 0 !important;
+}
+
+.zoomInIcon {
+    background-image: url(icons/zoomin.png) !important;
+}
+
+.zoomOutIcon {
+    background-image: url(icons/zoomout.png) !important;
+}
+
+.lightIcon {
+    background-image: url(icons/light.png) !important;
+    width: 47.54px !important;
+    height: 70.54px !important;
+    background-size: contain !important;
+    /* border: 1px solid red; */
+    background-position: center;
+}
+
+.lightOnIcon {
+    background-image: url(icons/light_on.png) !important;
+    width: 47.54px !important;
+    height: 70.54px !important;
+    background-size: contain !important;
+    /* border: 1px solid red; */
+    background-position: center;
+}
+
+.helpIcon {
+    background-image: url(icons/help.png) !important;
+}
+
+.fullIcon {
+    background-image: url(icons/full.png) !important;
+}
+
+.fullOnIcon {
+    background-image: url(icons/full_on.png) !important;
+}
+
+.ui-state-hover .toolbarIcon {
+    opacity: 1;
+}
+
+#guideTable {
+    display: table;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+}
+
+#guideCell {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#guideList {
+    width: 90%;
+    margin: auto;
+}
+
+#guideList li {
+    margin-bottom: 5px;
+}
+
+#guideList span {
+    width: 30px;
+    height: 30px;
+}
+
+#guideList img {
+    width: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+    .toolbarIcon {
+        width: 28px;
+        height: 28px;
+        background-size: contain;
+        /* top: 90vh !important; */
+        margin: 0px !important;
+        opacity: 0.85;
+        position: absolute;
+    }
+    .toolbar {
+        z-index: 10;
+        position: absolute;
+        display: flex;
+        padding: 0px;
+        /* width: 100%; */
+        /* height: 6vh; */
+        /* margin: 0 auto 2.78vh; */
+        bottom: 13px !important;
+        right: 0;
+        /* justify-content: center; */
+        pointer-events: none;
+        opacity: calc(var(--nav-slide-opacity) * 1.5);
+        /* border: 1px solid red; */
+        width: 45px;
+        height: 45px;
+        /* margin: 7px; */
+        margin: 0 0 7px 0;
+        /*  */
+    }
+    .lightIcon {
+        background-image: url(icons/light.png) !important;
+        width: 28px !important;
+        height: 40px !important;
+        background-size: contain !important;
+        /* border: 1px solid red; */
+        background-position: center;
+        left: -202% !important;
+        position: absolute !important;
+        top: -40% !important;
+    }
+    .lightOnIcon {
+        background-image: url(icons/light_on.png) !important;
+        width: 28px !important;
+        height: 40px !important;
+        background-size: contain !important;
+        /* border: 1px solid red; */
+        background-position: center;
+        left: -202% !important;
+        position: absolute !important;
+        top: -40% !important;
+    }
+    /*     .RadioContainer {
+        width: max-content;
+        justify-content: right;
+        margin: 0 0 0;
+        right: 0%;
+        transition: 0.5s;
+        bottom: 13px;
+        z-index: 100000000000;
+        max-width: 1000px;
+        border: 1px solid red;
+    } */
+}

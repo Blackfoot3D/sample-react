@@ -1,0 +1,178 @@
+.fullWindow {
+    width: 100%;
+    height: 100%;
+}
+
+.buttonLoad {
+    /* font-family: "Roboto", sans-serif;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px 18px 9px 18px;
+    font-weight: 500;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 100; */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.25);
+    padding: 2.66vw 4.8vw 2.4vw 4.8vw;
+    /* width: 19.73vw;
+    height: 7.2vw; */
+    background: var(--secondary-color);
+    border: 0.5px solid rgba(45, 62, 78, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* margin-top: 13px; */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.733vw;
+    line-height: 16px;
+    text-align: center;
+    color: var(--primary-color);
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.confirmPrompt {
+    /* width: 60%;
+    height: 64%; */
+    /* width: 80%;
+     */
+    width: 100%;
+    height: 225px;
+    /* height: 100%; */
+    font-family: "Roboto", sans-serif;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    display: inline-block;
+    padding: 10px 18px 9px 18px;
+    font-weight: 500;
+    position: absolute;
+    /* position: relative; */
+    /* left: 50%; */
+    /* top: 42%; */
+    top: 0;
+    /* transform: translate(-50%, -50%); */
+    z-index: 101;
+    /* margin: 0 auto; */
+    /* overflow-y: scroll; */
+    direction: ltr;
+    left: 0;
+}
+
+.op {
+    opacity: calc(var(--nav-slide-opacity) * 1.5);
+}
+
+.promptContainer {
+    border-radius: 6px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.25);
+    /* position: absolute; */
+    width: 80%;
+    height: 80%;
+    /* max-width: 225px; */
+    max-height: 225px;
+    display: none;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
+    background: var(--secondary-color);
+    /* opacity: calc(var(--nav-slide-opacity) * 1.5); */
+}
+
+.options {
+    /* position: absolute; */
+    bottom: 10%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* left: 50%; */
+    /* transform: translate(-50%, 0%); */
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 5%;
+    /* margin-bottom: 10%; */
+    padding-bottom: 10%;
+}
+
+.optionsButton {
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px 18px 9px 18px;
+    font-weight: 500;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    border: 1px solid white;
+    opacity: calc(var(--nav-slide-opacity) * 1.5);
+}
+
+
+/* .container {
+    width: 60vw;
+    height: 90vh;
+    border: 3px solid black;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.MainContainer {
+    width: 100vw;
+    height: 90vh;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.containerLeft {
+    float: left;
+}
+
+.grow {
+    animation-name: growMC;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.shrink {
+    animation-name: shrinkMC;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.containerRight {
+    float: right;
+}
+
+@keyframes shrinkMC {
+    0% {
+        width: 100vw;
+    }
+    100% {
+        width: 60vw;
+    }
+}
+
+@keyframes growMC {
+    0% {
+        width: 60vw;
+    }
+    100% {
+        width: 100vw;
+    }
+} */

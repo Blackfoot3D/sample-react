@@ -1,0 +1,59 @@
+.referencesBlock {
+    /* border: 1px solid red; */
+    word-wrap: break-word;
+    direction: ltr;
+    margin: 30px 0px 22px 0px;
+}
+
+.referencesBlock h3 {
+    font-family: "Goosebreak", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20.8px;
+    color: #2d3e4e;
+    display: inline-block;
+    padding: 6.78px 51px 9.22px 33px;
+    background-image: url("../Images/BGHighlight.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: center;
+    /* margin-left: 35px; */
+    margin: 0px 0px 22px 6.94%;
+}
+
+.referencesBlock p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 134.69%;
+    color: #3c4144;
+    /* margin: 0px 74px 25px 117px; */
+    margin: 0px 8.56% 25px 10.76%;
+}
+
+
+/* .referencesBlock p a {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.referencesBlock p a:hover {
+    color: red;
+} */
+
+@media only screen and (max-width: 800px) {
+    .referencesBlock {
+        margin: 22.5px 0px 16.5px 0px;
+    }
+    .referencesBlock h3 {
+        font-size: 18px;
+        padding: 6.915px 50.25px 6.915px 24.75px;
+        /* margin-left: 35px; */
+        margin: 0px 0px 16.5px 2.67%;
+    }
+    .referencesBlock p {
+        font-size: 10.5px;
+        margin: 0px 4.53% 22.25px 4.8%;
+    }
+}

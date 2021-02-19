@@ -1,0 +1,137 @@
+.outer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* padding: 10%; */
+    /* border: 1px solid red; */
+}
+
+.outerContainer {
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+    cursor: pointer;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.outerContainer:hover .hoverContainer {
+    opacity: 1;
+}
+
+.outerContainer:hover .listenLeft {
+    right: 110%;
+}
+
+.outerContainer:hover .listenRight {
+    left: 110%;
+}
+
+.buttonContainer {
+    /* width: 80%; */
+    /* height: 2.6vw; */
+    /* height: 100%; */
+    /* padding-right: 100%; */
+    /* width: 2.6vw; */
+    /* width: 50px; */
+    /* height: 100%; */
+    cursor: pointer;
+    mask-image: url("../Images/AudioButton.svg");
+    mask-size: 80% 80%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background: linear-gradient(to left, #bbbfb0 50%, #ffd04e 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    /* transition: 1s; */
+    margin: 0 auto;
+    position: absolute;
+    /* right: 0; */
+}
+
+.hoverContainer {
+    display: block;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* width: 50px; */
+    /* width: auto; */
+    border-radius: 50%;
+    background: #ffd04e;
+    background-position: 60% 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("../Images/play.svg");
+    /* position: absolute; */
+    position: absolute;
+    /* top: 0; */
+    /* bottom: 0; */
+    /* right: 0; */
+    /* left: 0; */
+    margin: 0 auto;
+    /* padding: 10px; */
+    opacity: 0;
+    transition: 0.2s;
+    /* opacity: 0; */
+    /* font-size: 18px;
+    position: absolute;
+    top: 0;
+    display: block; */
+    font-size: 18px;
+    font-style: italic;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.containerRight {
+    left: 0;
+}
+
+.containerLeft {
+    right: 0;
+}
+
+.listen {
+    position: absolute;
+    top: 50%;
+    /* left: 0; */
+    /* font-size: 18px; */
+    font-style: italic;
+    /* border: 1px solid green; */
+    /* line-height: 18px; */
+    transform: translateY(-50%);
+    transition: 0.2s;
+}
+
+.listenRight {
+    left: 120%;
+}
+
+.listenLeft {
+    right: 100%;
+}
+
+.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.audioAnimation {
+    animation-name: fillAudio;
+    /* animation-duration: 1s; */
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+}
+
+@keyframes fillAudio {
+    0% {
+        background-position: right bottom;
+    }
+    80% {
+        background-position: left bottom;
+    }
+    100% {
+        background-position: left bottom;
+    }
+}

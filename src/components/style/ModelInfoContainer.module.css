@@ -1,0 +1,112 @@
+/* @font-face {
+    font-family: "Goosebreak";
+    src: url("/src/fonts/Goosebreak.woff2") format("opentype");
+} */
+
+.innerDiv {
+    line-height: 34px;
+    font-size: 27px;
+    text-align: left;
+    direction: rtl;
+}
+
+.innerDiv h4 {
+    font-family: "Goosebreak", serif;
+    /* font-style: normal; */
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 34px;
+    padding-bottom: 8px;
+}
+
+.innerDiv p {
+    font-family: "Roboto", sans-serif;
+    /* line-height: 34px; */
+    font-size: 27px;
+    line-height: 34px;
+    font-style: italic;
+    direction: ltr;
+    font-weight: 300;
+    padding-bottom: 8px;
+}
+
+.innerDiv a {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    /* line-height: 34px; */
+    font-size: 27px;
+    line-height: 34px;
+    direction: ltr;
+    font-weight: 300;
+    padding-bottom: 8px;
+}
+
+.InfoContainerHidden {
+    z-index: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 0px;
+    background-color: rgba(220, 220, 220, 0.5);
+    border-radius: 10px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 50px;
+    /* visibility: hidden; */
+    height: 30px;
+    width: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+    .innerDiv h4 {
+        font-size: 21px;
+        line-height: 27px;
+        padding-bottom: 8px;
+    }
+    .innerDiv p {
+        font-size: 21px;
+        line-height: 27px;
+        padding-bottom: 8px;
+    }
+    .innerDiv a {
+        font-size: 21px;
+        line-height: 27px;
+        padding-bottom: 8px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .innerDiv h4 {
+        font-size: 16px;
+        line-height: 21px;
+        padding-bottom: 6px;
+    }
+    .innerDiv p {
+        font-size: 16px;
+        line-height: 21px;
+        padding-bottom: 6px;
+    }
+    .innerDiv a {
+        font-size: 16px;
+        line-height: 21px;
+        padding-bottom: 6px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .innerDiv h4 {
+        font-size: 11px;
+        line-height: 14px;
+        padding-bottom: 4px;
+    }
+    .innerDiv p {
+        font-size: 11px;
+        line-height: 14px;
+        padding-bottom: 4px;
+    }
+    .innerDiv a {
+        font-size: 11px;
+        line-height: 14px;
+        padding-bottom: 4px;
+    }
+}

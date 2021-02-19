@@ -1,0 +1,54 @@
+.buttonStyle {
+    background-color: darkgray;
+    border-color: red;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    /* margin: 20px; */
+    z-index: 20;
+    display: block;
+    position: absolute;
+    /* top: 0; */
+    margin: 10px 3%;
+    /* padding: 3%; */
+    /* grid-column: 4 / span 6; */
+}
+
+.buttonStyle:hover {
+    color: red;
+}
+
+.mapButtonStyle {
+    border-color: blue;
+}
+
+.mapButtonStyle {
+    color: blue;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.homeParent {
+    /* position: absolute; */
+    /* top: 10px; */
+    /* left: 80px; */
+}
+
+.homeButton {
+    /* position: absolute; */
+    background-image: url("../Images/home_24px.svg");
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.homeButton:hover {
+    text-shadow: 0px 0px 3px #ffd04e;
+    -webkit-filter: drop-shadow(0px 0px 3px #ffd04e);
+    filter: drop-shadow(0px 0px 3px #ffd04e);
+}

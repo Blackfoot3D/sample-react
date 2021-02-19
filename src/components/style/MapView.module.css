@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* margin: 25px; */
+    height: 90vh;
+}
+
+.gridItem {
+    background-color: darkgrey;
+}

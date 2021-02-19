@@ -1,0 +1,600 @@
+.main {
+    padding: 50px;
+    position: relative;
+    overflow: auto;
+    background: var(--background);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Accordion Menu */
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 13.5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    filter: opacity(calc(var(--nav-slide-opacity) * 1.5));
+}
+
+.accordion button {
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 13.5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    opacity: 0.6;
+}
+
+.accordion button:hover {
+    text-shadow: 0px 0px 3px var(--primary-color);
+}
+
+.accordionItemActive {
+    text-shadow: 0px 0px 1px var(--primary-color);
+    /* color: red; */
+    opacity: 1 !important;
+    /* font-weight: ; */
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.accordionContainer {
+    width: 20%;
+    position: fixed;
+    height: auto;
+    left: 29.5px;
+    top: 162px;
+    /* border: 1px solid blue; */
+    overflow-y: auto;
+    z-index: 120;
+    max-height: 70%;
+    direction: rtl;
+    min-width: min-content;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.accordion:hover {}
+
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.panel p {
+    padding: 13.5px;
+    transition: 0.5s;
+    opacity: 0.6;
+    display: block;
+}
+
+.panel p:hover {
+    /* text-shadow: 4px 4px 8px red; */
+    /* opacity: 1; */
+    text-shadow: 0px 0px 3px var(--primary-color);
+}
+
+.textContainer {
+    /* width: 49.17vw; */
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    /* border: 1px solid red; */
+    /* height: 88.7vh; */
+    height: 100vh;
+    /* height: auto; */
+    top: 0;
+    overflow-y: auto;
+    padding-right: 5.89%;
+    padding-left: 50.83%;
+    z-index: 10;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    filter: opacity(calc(var(--nav-slide-opacity) * 1.5));
+}
+
+.textContainer section {
+    padding: 21px 0px 21px 0px;
+}
+
+.textContainer h1 {
+    font-family: "Goosebreak", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    color: var(--primary-color);
+    padding-bottom: 45px;
+    padding-top: 57px;
+    line-height: 86.94px;
+}
+
+.textContainer a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.textContainer a:hover {
+    color: var(--quaternary-color);
+    opacity: 1;
+}
+
+.introPad {
+    font-family: "Goosebreak", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    color: var(--primary-color);
+    padding-bottom: 0px;
+    padding-top: 0px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.textContainer h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    /* font-weight: bold; */
+    font-size: 54px;
+    line-height: 68px;
+    color: var(--primary-color);
+    font-weight: 200;
+    padding-bottom: 51px;
+    padding-top: 51px;
+}
+
+.textContainer h2 b {
+    font-family: "Goosebreak", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 68px;
+    color: var(--primary-color);
+}
+
+.textContainer h3 {
+    font-family: "Goosebreak", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--primary-color);
+    padding: 25px 0px 13px 0px;
+}
+
+.textContainer p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    /* P Text */
+    color: var(--primary-color);
+    padding: 17.5px 0px 17.5px 0px;
+}
+
+.listContainer {
+    padding: 20px;
+}
+
+.textContainer section ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding: 18px;
+    width: 100%;
+    margin: auto;
+    /* P Text */
+    /* color: #3c4144; */
+    /* or 32px */
+    /* P Text */
+    color: red;
+    list-style: disc;
+}
+
+.textContainer section ul li {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    /* P Text */
+    /* color: #3c4144; */
+    /* or 32px */
+    /* P Text */
+    color: var(--primary-color);
+    list-style: disc;
+    display: list-item;
+}
+
+.textContainer section ul li span {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    /* P Text */
+    color: var(--primary-color);
+    /* margin-left: 60px; */
+    /* border: 1px solid blue; */
+    align-self: center;
+    vertical-align: middle;
+    top: 0;
+}
+
+.textContainer section ol {
+    list-style-type: upper-alpha;
+    padding: 18px 20px 18px 20px;
+}
+
+.textContainer ol li {
+    font-family: "Goosebreak", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 134.69%;
+    padding: 14px;
+    /* or 32px */
+    /* P Text */
+    color: var(--primary-color);
+    /* border: 1px solid red; */
+}
+
+
+/* .textContainer ol li:before {
+    font-family: Goosebreak;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 134.69%;
+    color: red;
+} */
+
+.li:before {
+    content: "";
+    padding-left: 10px;
+}
+
+.textContainer ol li span {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    /* P Text */
+    color: var(--primary-color);
+    /* margin-left: 60px; */
+    display: inline-block;
+    /* border: 1px solid blue; */
+    align-self: center;
+    vertical-align: middle;
+    top: 0;
+}
+
+.imageContainer {
+    width: 34.38vw;
+    height: 34.38vw;
+    position: fixed;
+    bottom: 122px;
+    left: 11.46%;
+    border: 1px solid purple;
+}
+
+@media only screen and (max-width: 800px) {
+    .hamburgerContainer {
+        width: 100vw;
+        height: 5%;
+        display: flex;
+        justify-content: flex-start;
+        direction: ltr;
+        align-items: center;
+        /* justify-content: center; */
+        left: 0;
+        position: absolute;
+        top: 5.94%;
+        border-bottom: 0.5px solid#bbbfb0;
+        /* right: 50%; */
+        /* min-height: 50px; */
+    }
+    .hamburgerContainer h1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4.8vw;
+        /* line-height: 5.6vw; */
+        color: var(--primary-color);
+        white-space: nowrap;
+    }
+    .hamburgerIcon {
+        color: var(--primary-color);
+        font-size: 4.8vw;
+        /* position: absolute; */
+        left: 0;
+        margin: 1%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 3.46%;
+        cursor: pointer;
+        padding: 1%;
+    }
+    .hamInner {
+        border: 1px solid red;
+        /* display: block;
+        margin: auto; */
+    }
+    .lightShift {
+        right: 25px !important;
+    }
+    .main {
+        padding: 50px;
+        position: relative;
+        overflow: auto;
+        background: var(--background);
+        width: 100vw;
+        /* border: 1px solid red; */
+        height: 100vh;
+    }
+    /* Accordion Menu */
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        background-color: transparent;
+        padding: 13.5px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 19px;
+        height: 89.06%;
+        position: absolute;
+        right: 0;
+    }
+    .accordion button {
+        padding: 13.5px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 19px;
+        opacity: 1;
+    }
+    .show {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: all !important;
+    }
+    .accordionContainer {
+        width: 100%;
+        left: 0;
+        top: 5.94%;
+        /* overflow-y: auto; */
+        z-index: 120000000;
+        max-height: 94.06%;
+        height: 94.06%;
+        background: var(--background);
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        /* border: 1px solid red; */
+    }
+    .closebutton {
+        z-index: 120000001;
+        /* border: 1px solid red; */
+        position: fixed;
+        top: 5.94%;
+        right: 0%;
+        cursor: pointer;
+        direction: ltr;
+        font-size: 30px;
+        border: none;
+        background: transparent;
+        padding: 2% 3%;
+        transition: 0.5s;
+        color: var(--primary-color);
+    }
+    .closebutton:hover {
+        transform: scale(1.2);
+    }
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+    }
+    .panel p:hover {
+        text-shadow: 0px 0px 3px var(--primary-color);
+    }
+    .textContainer {
+        height: 89.06%;
+        top: 10.94vh;
+        padding-right: 5.07%;
+        padding-left: 5.07%;
+        padding-bottom: 5%;
+        /* border: 1px solid red; */
+    }
+    .textContainer section {
+        padding: 10px 0px 10px 0px;
+        /* border: 1px solid red; */
+    }
+    .textContainer h1 {
+        font-size: 28px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        line-height: 35px;
+    }
+    .introPad {
+        font-family: "Goosebreak", serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 90px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .textContainer h2 {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        /* font-weight: bold; */
+        font-size: 25px;
+        line-height: 32px;
+        color: var(--primary-color);
+        font-weight: 200;
+        padding-bottom: 26px;
+        padding-top: 26px;
+    }
+    .textContainer h2 b {
+        font-family: "Goosebreak", serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 32px;
+        color: var(--primary-color);
+    }
+    .textContainer h3 {
+        font-size: 20px;
+        line-height: 25px;
+        color: var(--primary-color);
+        padding: 10px 0px 0px 0px;
+    }
+    .textContainer p {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 21px;
+        /* P Text */
+        color: var(--primary-color);
+        padding: 10px 0px 10px 0px;
+    }
+    .listContainer {
+        padding: 20px;
+    }
+    .textContainer section ul {
+        list-style-type: circle;
+        list-style-position: inside;
+        padding: 0px 5px 5px 19px;
+        width: 100%;
+        margin: auto;
+        /* P Text */
+        /* color: #3c4144; */
+        /* or 32px */
+        /* P Text */
+        color: red;
+        list-style: disc;
+    }
+    .textContainer section ul li {
+        list-style-type: circle;
+        list-style-position: inside;
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+        /* P Text */
+        /* color: #3c4144; */
+        /* or 32px */
+        /* P Text */
+        color: var(--primary-color);
+        list-style: disc;
+        display: list-item;
+    }
+    .textContainer section ul li span {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        /* P Text */
+        color: var(--primary-color);
+        /* margin-left: 60px; */
+        /* border: 1px solid blue; */
+        align-self: center;
+        vertical-align: middle;
+        top: 0;
+    }
+    .textContainer section ol {
+        list-style-type: upper-alpha;
+        padding: 0px 0px 0px 19px;
+        /* border: 1px solid red; */
+    }
+    .textContainer ol li {
+        font-family: "Goosebreak", serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 134.69%;
+        padding: 10px;
+        /* or 32px */
+        /* P Text */
+        color: var(--primary-color);
+        /* border: 1px solid red; */
+    }
+    /* .textContainer ol li:before {
+        font-family: Goosebreak;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 134.69%;
+        color: red;
+    } */
+    .li:before {
+        content: "";
+        padding-left: 10px;
+    }
+    .textContainer ol li span {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        /* P Text */
+        color: var(--primary-color);
+        /* margin-left: 60px; */
+        display: inline-block;
+        /* border: 1px solid blue; */
+        align-self: center;
+        vertical-align: middle;
+        top: 0;
+    }
+    .imageContainer {
+        width: 34.38vw;
+        height: 34.38vw;
+        position: fixed;
+        bottom: 122px;
+        left: 11.46%;
+        border: 1px solid purple;
+    }
+}

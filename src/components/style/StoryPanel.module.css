@@ -1,0 +1,135 @@
+.container {
+    /* background-color: pink; */
+    /* vertical-align: top; */
+    height: 90vh;
+    opacity: calc(var(--nav-slide-opacity) * 1.5);
+}
+
+.containerIntro {
+    /* background-color: pink; */
+    /* vertical-align: top; */
+    /* position: fixed; */
+    height: 90vh;
+    opacity: calc(var(--nav-slide-opacity) * 1.5);
+}
+
+.containerLeft {
+    float: left;
+    /* left: 0; */
+}
+
+.containerRight {
+    float: right;
+}
+
+.containerHidden {
+    width: 0;
+}
+
+.containerVisible {
+    width: 45vw;
+    height: 90vh;
+}
+
+.animationDelay {
+    animation-delay: 0.25s;
+}
+
+
+/* Class for animating the StoryPanel being shown */
+
+.show {
+    animation-name: show;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+
+/* Class for animating the StoryPanel being hidden */
+
+.hide {
+    animation-name: hide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    display: inline-block;
+    animation-timing-function: ease-in-out;
+}
+
+
+/* Keyframe animation for animating the panel being shown */
+
+@keyframes show {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 45vw;
+    }
+}
+
+
+/* Keyframe animation for animating the panel being hidden */
+
+@keyframes hide {
+    0% {
+        width: 45vw;
+    }
+    100% {
+        width: 0vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        /* background-color: pink; */
+        /* bottom: 0; */
+        height: 56.16%;
+        bottom: 5.94%;
+        /* position: fixed; */
+    }
+    .containerIntro {
+        /* top: 37.91%; */
+        position: fixed;
+        height: 56.16%;
+        bottom: 5.94%;
+        /* border: 1px solid red; */
+    }
+    .containerVisible {
+        width: 100vw;
+        /* direction: ltr; */
+    }
+    .containerHidden {
+        width: 0;
+    }
+    .containerLeft {
+        float: left;
+        /* left: 0; */
+        /* direction: rtl; */
+        /* position: fixed; */
+    }
+    .containerRight {
+        float: right;
+        /* left: 0; */
+    }
+    .animationDelay {
+        animation-delay: 0s;
+    }
+    @keyframes show {
+        0% {
+            width: 0vw;
+        }
+        100% {
+            width: 100vw;
+        }
+    }
+    /* Keyframe animation for animating the panel being hidden */
+    @keyframes hide {
+        0% {
+            width: 100vw;
+        }
+        100% {
+            width: 0vw;
+        }
+    }
+}

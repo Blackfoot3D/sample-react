@@ -1,0 +1,166 @@
+.openMenu {
+    background-color: grey;
+    transition: 0.5s;
+    width: 30vw;
+    /* Extends the width to 25% of the screen */
+    height: 100vh;
+    overflow: hidden;
+    /* This Gets the menu outside of the Hamburger grid */
+    position: absolute;
+    /* Places menu to the left */
+    left: 0;
+    /* Sets the menu to overlay at index 99. any other index below is covered */
+    z-index: 99;
+}
+
+.closeMenu {
+    background-color: grey;
+    /* Can set this to invisible if you want it to fade out */
+    transition: 0.5s;
+    width: 0%;
+    /* Collapses the menu */
+    height: 100vh;
+    /* This Gets the menu outside of the Hamburger grid */
+    position: absolute;
+    /* Places menu to the left */
+    left: 0;
+    /* Sets the menu to overlay at index 99. any other index below is covered */
+    z-index: 99;
+}
+
+.menuItem {
+    display: none;
+}
+
+.sidepanel {
+    height: 90vh;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+
+/*************************************
+/* The sidepanel menu */
+
+.open {
+    width: 30vw;
+    transition: 0.5s;
+}
+
+.closed {
+    width: 0vw;
+    transition: 0.5s;
+}
+
+.sidePanel {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    z-index: 9999999999999;
+    padding-top: 60px;
+    transition: 0.5s;
+    /* this should work to allow vertical scrolling if the panel gets full */
+    overflow-y: auto;
+}
+
+
+/* The sidepanel links */
+
+.navItem {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.navItem:hover {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: transparent;
+    border: none;
+    color: grey;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: #f1f1f1;
+    text-shadow: 0px 0px 1px white;
+}
+
+.openbtn {
+    font-size: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #2d3e4e;
+    padding: 20px 40px;
+    border: none;
+    z-index: 99;
+    transition: 0.3s;
+    /* margin: 0 auto; */
+}
+
+.openbtn:hover {
+    /* background-color: #444; */
+    text-shadow: 0px 0px 3px #ffd04e;
+}
+
+.show {
+    animation-name: show;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.hide {
+    animation-name: hide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    display: inline-block;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes show {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 30vw;
+    }
+}
+
+@keyframes hide {
+    0% {
+        width: 30vw;
+    }
+    100% {
+        width: 0vw;
+    }
+}
